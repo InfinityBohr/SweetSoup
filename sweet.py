@@ -90,6 +90,7 @@ def server3(hash, name):
 print("Available Channels\nSome links might not works!!!")
 lis = [
     "brazzerstv",
+    "brazzerstv",
     "hustlerhd",
     "hustlertv",
     "penthouse",
