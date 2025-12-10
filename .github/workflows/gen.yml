@@ -1,4 +1,4 @@
-name: Daily File Generator
+name: Daily Generator
 
 on:
   schedule:
