@@ -5,7 +5,7 @@ import requests
 
 
 def runServers():
-    with open("doc/playlist1.m3u8", "w") as file:
+    with open("docs/playlist1.m3u8", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(lis)):
         print(f"{i+1}.{lis[i]}")
