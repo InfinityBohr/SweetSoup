@@ -1,4 +1,4 @@
-name: Daily Generator
+name: Generator
 
 on:
   schedule:
