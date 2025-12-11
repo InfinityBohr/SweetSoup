@@ -4,16 +4,16 @@ import os
 import requests
 
 
-def runServers():
+def runServer():
     with open("docs/playlist1.m3u8", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(lis)):
         print(f"{i+1}.{lis[i]}")
-        server1(i + 1, lis[i])
+        server(i + 1, lis[i])
 
 
 def server1(i, name):
-    print("Running Server 1")
+    print("Running Server")
     url = f"https://adult-tv-channels.com/tv/{name}.php"
     headers = {
         "User-Agent": "Mozilla/5.0",
@@ -39,7 +39,6 @@ def server1(i, name):
 # For Server 1
 print("Available Channels\nSome links might not works!!!")
 lis = [
-    "brazzerstv",
     "brazzerstv",
     "hustlerhd",
     "hustlertv",
@@ -78,4 +77,4 @@ lis = [
 ]
 
 
-runServers() #Runs the function to start the servers!
+runServer() #Runs the function to start the server!
