@@ -12,7 +12,7 @@ def runServer():
         server(i + 1, lis[i])
 
 
-def server1(i, name):
+def server(i, name):
     print("Running Server")
     url = f"https://adult-tv-channels.com/tv/{name}.php"
     headers = {
