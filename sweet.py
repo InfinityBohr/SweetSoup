@@ -42,7 +42,9 @@ def server1(i, name):
         # print(stream_url)
         with open("docs/playlist1.m3u8", "a") as file:
             file.write(f"#EXTINF:-1,{name}\n")
-            file.write(f"{stream_url}|Referer=https://adult-tv-channels.com/|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 ygx/69.1 Safari/537.36\n")
+            file.write(f"#EXTVLCOPT:http-referrer=https://adult-tv-channels.click/\n")
+            file.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 ygx/69.1 Safari/537.36\n")
+            file.write(f"{stream_url}\n")
 
     else:
         print("No URL found.")
