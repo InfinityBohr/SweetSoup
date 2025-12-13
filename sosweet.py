@@ -8,7 +8,7 @@ import requests
 
 
 def runServers():
-    with open("doc/playlist1.m3u8", "w") as file:
+    with open("doc/playlist1.m3u", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(lis)):
         print(f"{i+1}.{lis[i]}")
@@ -43,7 +43,7 @@ def server1(i, name):
     if match:
         stream_url = match.group(1)
         # print(stream_url)
-        with open("doc/playlist1.m3u8", "a") as file:
+        with open("doc/playlist1.m3u", "a") as file:
             file.write(f"#EXTINF:-1,{name}\n")
             file.write(f"{stream_url}|Referer=https://adult-tv-channels.com/|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 ygx/69.1 Safari/537.36\n")
 
