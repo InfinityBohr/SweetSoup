@@ -6,7 +6,7 @@ import requests
 # --- Global Constants ---
 
 # Add the channel logo constant
-CHANNEL_LOGO = "https://raw.githubusercontent.com/InfinityBohr/SweetSoup/refs/heads/main/doc/images/{name}.png"
+CHANNEL_LOGO = "https://raw.githubusercontent.com/InfinityBohr/SweetSoup/refs/heads/main/doc/images/{name}.png",
 
 
 
