@@ -6,7 +6,7 @@ import requests
 # --- Global Constants ---
 
 # Add the channel logo constant
-CHANNEL_LOGO = "https://raw.githubusercontent.com/InfinityBohr/SweetSoup/refs/heads/main/doc/images/{name}.png",
+CHANNEL_LOGO = "https://raw.githubusercontent.com/InfinityBohr/SweetSoup/refs/heads/main/doc/images/{name}.png"
 
 
 
@@ -48,7 +48,7 @@ def server1(i, name):
         stream_url = match.group(1)
         # print(stream_url)
         with open("doc/playlist1.m3u8", "a") as file:
-            file.write(f"#EXTINF:-1 tvg-logo="{CHANNEL_LOGO}" group-title="Hot and Spicy",{name}\n")
+            file.write(f"#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/InfinityBohr/SweetSoup/refs/heads/main/doc/images/pinkerotic.png" group-title="Hot and Spicy" ,{name}\n")
             file.write(f"{stream_url}|Referer=https://adult-tv-channels.com/|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 ygx/69.1 Safari/537.36\n")
 
     else:
